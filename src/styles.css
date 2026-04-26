@@ -1,0 +1,68 @@
+.App {
+  font-family: sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.toast-section {
+  position: fixed;
+  right: 8px;
+  top: 0;
+  width: 250px;
+}
+
+.toast-btn {
+  color: white;
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px;
+  border-radius: 4px;
+  position: relative;
+  animation: slide 1s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(100%);
+  }
+  ,
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.success {
+  background-color: green;
+}
+
+.error {
+  background-color: red;
+}
+
+.warning {
+  background-color: orange;
+}
+
+.info {
+  background-color: skyblue;
+}
+
+.toast-close {
+  position: absolute;
+  color: white;
+  border: 1px solid white;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 4px;
+}
